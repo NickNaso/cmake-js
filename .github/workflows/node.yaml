@@ -40,12 +40,12 @@ jobs:
           - os: ubuntu-latest
             arch: arm
             docker-arch: linux/arm/v7
-            docker-image: node:14-bullseye
+            docker-image: node:20-bullseye
           # linux-musl
           - os: ubuntu-latest
             arch: x64
             docker-arch: linux/amd64
-            docker-image: node:14-alpine
+            docker-image: node:20-alpine
             libc: musl
 
     steps:
