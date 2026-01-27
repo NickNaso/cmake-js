@@ -5,7 +5,7 @@ const lib = require('../../')
 const locateNAN = require('../../lib/locateNAN')
 const CMake = lib.CMake
 const path = require('path')
-const log = require('npmlog')
+const log = require('../../lib/logger')
 const testRunner = require('./testRunner')
 const testCases = require('./testCases')
 
@@ -15,7 +15,6 @@ describe('BuildSystem', function () {
 	before(function () {
 		if (process.env.UT_LOG_LEVEL) {
 			log.level = process.env.UT_LOG_LEVEL
-			log.resume()
 		}
 		locateNAN.__projectRoot = path.resolve(path.join(__dirname, '../../'))
 	})

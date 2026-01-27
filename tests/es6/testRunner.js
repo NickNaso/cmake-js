@@ -2,7 +2,7 @@
 
 const lib = require('../../')
 const environment = lib.environment
-const log = require('npmlog')
+const log = require('../../lib/logger')
 const util = require('util')
 
 function* generateRuntimeOptions() {
